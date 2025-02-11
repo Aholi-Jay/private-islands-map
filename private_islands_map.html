@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_38fee759391fcabfe5ea3e9fc25c0dfd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_38fee759391fcabfe5ea3e9fc25c0dfd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_38fee759391fcabfe5ea3e9fc25c0dfd = L.map(
+                "map_38fee759391fcabfe5ea3e9fc25c0dfd",
+                {
+                    center: [23.5, -75.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_57507e80013b16d9a626622c45a549f5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_57507e80013b16d9a626622c45a549f5.addTo(map_38fee759391fcabfe5ea3e9fc25c0dfd);
+        
+    
+            var marker_36a2f820537b0139b9284ec5e637ec22 = L.marker(
+                [25.817, -77.939],
+                {
+}
+            ).addTo(map_38fee759391fcabfe5ea3e9fc25c0dfd);
+        
+    
+            var icon_2e799a985fdcfc85ea6abf95ad7279f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_36a2f820537b0139b9284ec5e637ec22.setIcon(icon_2e799a985fdcfc85ea6abf95ad7279f7);
+        
+    
+        var popup_1099af7b7eb27f9f6782665e1a80a53c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e3ed8fa5bdb44412c065bc21536506f = $(`<div id="html_6e3ed8fa5bdb44412c065bc21536506f" style="width: 100.0%; height: 100.0%;">CocoCay, Bahamas</div>`)[0];
+                popup_1099af7b7eb27f9f6782665e1a80a53c.setContent(html_6e3ed8fa5bdb44412c065bc21536506f);
+            
+        
+
+        marker_36a2f820537b0139b9284ec5e637ec22.bindPopup(popup_1099af7b7eb27f9f6782665e1a80a53c)
+        ;
+
+        
+    
+    
+            marker_36a2f820537b0139b9284ec5e637ec22.bindTooltip(
+                `<div>
+                     CocoCay, Bahamas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b0807c1df2633a91252b34fbdd467cd5 = L.marker(
+                [19.7864, -72.2454],
+                {
+}
+            ).addTo(map_38fee759391fcabfe5ea3e9fc25c0dfd);
+        
+    
+            var icon_d41b1392c8442594402b4c7508c8f15a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b0807c1df2633a91252b34fbdd467cd5.setIcon(icon_d41b1392c8442594402b4c7508c8f15a);
+        
+    
+        var popup_34b7c60e3902f413cb8f0bb16fa21a1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbe5e38e22574f81ee6f4562111a31af = $(`<div id="html_fbe5e38e22574f81ee6f4562111a31af" style="width: 100.0%; height: 100.0%;">Labadee, Haiti</div>`)[0];
+                popup_34b7c60e3902f413cb8f0bb16fa21a1c.setContent(html_fbe5e38e22574f81ee6f4562111a31af);
+            
+        
+
+        marker_b0807c1df2633a91252b34fbdd467cd5.bindPopup(popup_34b7c60e3902f413cb8f0bb16fa21a1c)
+        ;
+
+        
+    
+    
+            marker_b0807c1df2633a91252b34fbdd467cd5.bindTooltip(
+                `<div>
+                     Labadee, Haiti
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_59942e531ed7ad226fed5a4885dc187e = L.marker(
+                [25.8333, -77.9333],
+                {
+}
+            ).addTo(map_38fee759391fcabfe5ea3e9fc25c0dfd);
+        
+    
+            var icon_c3c29cdef3736afa739c07160f19c204 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_59942e531ed7ad226fed5a4885dc187e.setIcon(icon_c3c29cdef3736afa739c07160f19c204);
+        
+    
+        var popup_938fbe2d3ad709c898d43d8c6cf7bee8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf33257f7a7ec5c6bdc75716baf8e2f7 = $(`<div id="html_cf33257f7a7ec5c6bdc75716baf8e2f7" style="width: 100.0%; height: 100.0%;">Great Stirrup Cay, Bahamas</div>`)[0];
+                popup_938fbe2d3ad709c898d43d8c6cf7bee8.setContent(html_cf33257f7a7ec5c6bdc75716baf8e2f7);
+            
+        
+
+        marker_59942e531ed7ad226fed5a4885dc187e.bindPopup(popup_938fbe2d3ad709c898d43d8c6cf7bee8)
+        ;
+
+        
+    
+    
+            marker_59942e531ed7ad226fed5a4885dc187e.bindTooltip(
+                `<div>
+                     Great Stirrup Cay, Bahamas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f0714b9223830e35aa88753e4204ace8 = L.marker(
+                [16.4685, -88.4122],
+                {
+}
+            ).addTo(map_38fee759391fcabfe5ea3e9fc25c0dfd);
+        
+    
+            var icon_b376a19df36d694481cbbe3bd2f3689c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f0714b9223830e35aa88753e4204ace8.setIcon(icon_b376a19df36d694481cbbe3bd2f3689c);
+        
+    
+        var popup_90618273daeb786db9ea5062e94ae8cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84b71ee25234ea47282a1db5bba9834d = $(`<div id="html_84b71ee25234ea47282a1db5bba9834d" style="width: 100.0%; height: 100.0%;">Harvest Caye, Belize</div>`)[0];
+                popup_90618273daeb786db9ea5062e94ae8cf.setContent(html_84b71ee25234ea47282a1db5bba9834d);
+            
+        
+
+        marker_f0714b9223830e35aa88753e4204ace8.bindPopup(popup_90618273daeb786db9ea5062e94ae8cf)
+        ;
+
+        
+    
+    
+            marker_f0714b9223830e35aa88753e4204ace8.bindTooltip(
+                `<div>
+                     Harvest Caye, Belize
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bcc1536a845024254332250e0252a69c = L.marker(
+                [26.08, -77.5466],
+                {
+}
+            ).addTo(map_38fee759391fcabfe5ea3e9fc25c0dfd);
+        
+    
+            var icon_7c246d2d0fa58b10ba2d78832fbd4b3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bcc1536a845024254332250e0252a69c.setIcon(icon_7c246d2d0fa58b10ba2d78832fbd4b3e);
+        
+    
+        var popup_863f857d75a57e2ac03473af3fa75e93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c242e15796c5d0280e67a0ba9f59c9c3 = $(`<div id="html_c242e15796c5d0280e67a0ba9f59c9c3" style="width: 100.0%; height: 100.0%;">Castaway Cay, Bahamas</div>`)[0];
+                popup_863f857d75a57e2ac03473af3fa75e93.setContent(html_c242e15796c5d0280e67a0ba9f59c9c3);
+            
+        
+
+        marker_bcc1536a845024254332250e0252a69c.bindPopup(popup_863f857d75a57e2ac03473af3fa75e93)
+        ;
+
+        
+    
+    
+            marker_bcc1536a845024254332250e0252a69c.bindTooltip(
+                `<div>
+                     Castaway Cay, Bahamas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0ea487cce0d8a6f487abbc13af01a33c = L.marker(
+                [24.8333, -76.3333],
+                {
+}
+            ).addTo(map_38fee759391fcabfe5ea3e9fc25c0dfd);
+        
+    
+            var icon_7f9a153b2a51a817370b3e15229eefc3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0ea487cce0d8a6f487abbc13af01a33c.setIcon(icon_7f9a153b2a51a817370b3e15229eefc3);
+        
+    
+        var popup_63dc2f22d154dcf8b8c0ba54b810da7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bf7db8c1f1445d83ff632c7fa557ed3 = $(`<div id="html_2bf7db8c1f1445d83ff632c7fa557ed3" style="width: 100.0%; height: 100.0%;">Lookout Cay, Eleuthera</div>`)[0];
+                popup_63dc2f22d154dcf8b8c0ba54b810da7d.setContent(html_2bf7db8c1f1445d83ff632c7fa557ed3);
+            
+        
+
+        marker_0ea487cce0d8a6f487abbc13af01a33c.bindPopup(popup_63dc2f22d154dcf8b8c0ba54b810da7d)
+        ;
+
+        
+    
+    
+            marker_0ea487cce0d8a6f487abbc13af01a33c.bindTooltip(
+                `<div>
+                     Lookout Cay, Eleuthera
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8b58bce3d3933da29824e3e73c146fed = L.marker(
+                [25.4273, -78.9297],
+                {
+}
+            ).addTo(map_38fee759391fcabfe5ea3e9fc25c0dfd);
+        
+    
+            var icon_0d571dd11413e313d441bf8e6ff89157 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8b58bce3d3933da29824e3e73c146fed.setIcon(icon_0d571dd11413e313d441bf8e6ff89157);
+        
+    
+        var popup_d3080109e600a106c73978231cd79cf5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c93d60efebb6d0f8c0eee1bd885b1979 = $(`<div id="html_c93d60efebb6d0f8c0eee1bd885b1979" style="width: 100.0%; height: 100.0%;">Ocean Cay MSC Marine Reserve, Bahamas</div>`)[0];
+                popup_d3080109e600a106c73978231cd79cf5.setContent(html_c93d60efebb6d0f8c0eee1bd885b1979);
+            
+        
+
+        marker_8b58bce3d3933da29824e3e73c146fed.bindPopup(popup_d3080109e600a106c73978231cd79cf5)
+        ;
+
+        
+    
+    
+            marker_8b58bce3d3933da29824e3e73c146fed.bindTooltip(
+                `<div>
+                     Ocean Cay MSC Marine Reserve, Bahamas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0bc37303c4b7ebb2bf9e1b604651df91 = L.marker(
+                [24.5905, -75.951],
+                {
+}
+            ).addTo(map_38fee759391fcabfe5ea3e9fc25c0dfd);
+        
+    
+            var icon_82d82364774788b95df987c860dfeb57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0bc37303c4b7ebb2bf9e1b604651df91.setIcon(icon_82d82364774788b95df987c860dfeb57);
+        
+    
+        var popup_8dd206d7879496b7d38f13e62bde9533 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b1f71cc88e9ccf7ea613ca4c0bd6cd7 = $(`<div id="html_4b1f71cc88e9ccf7ea613ca4c0bd6cd7" style="width: 100.0%; height: 100.0%;">Half Moon Cay, Bahamas</div>`)[0];
+                popup_8dd206d7879496b7d38f13e62bde9533.setContent(html_4b1f71cc88e9ccf7ea613ca4c0bd6cd7);
+            
+        
+
+        marker_0bc37303c4b7ebb2bf9e1b604651df91.bindPopup(popup_8dd206d7879496b7d38f13e62bde9533)
+        ;
+
+        
+    
+    
+            marker_0bc37303c4b7ebb2bf9e1b604651df91.bindTooltip(
+                `<div>
+                     Half Moon Cay, Bahamas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e698b5a9c9e003ef079f6f04c69b7497 = L.marker(
+                [24.5833, -76.15],
+                {
+}
+            ).addTo(map_38fee759391fcabfe5ea3e9fc25c0dfd);
+        
+    
+            var icon_21139400eafd4888175f29035f781246 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e698b5a9c9e003ef079f6f04c69b7497.setIcon(icon_21139400eafd4888175f29035f781246);
+        
+    
+        var popup_d13bac835405ced29dbcbcc97cf147b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a34bf56f52a6f10b2222d34e2683364a = $(`<div id="html_a34bf56f52a6f10b2222d34e2683364a" style="width: 100.0%; height: 100.0%;">Princess Cays, Eleuthera</div>`)[0];
+                popup_d13bac835405ced29dbcbcc97cf147b3.setContent(html_a34bf56f52a6f10b2222d34e2683364a);
+            
+        
+
+        marker_e698b5a9c9e003ef079f6f04c69b7497.bindPopup(popup_d13bac835405ced29dbcbcc97cf147b3)
+        ;
+
+        
+    
+    
+            marker_e698b5a9c9e003ef079f6f04c69b7497.bindTooltip(
+                `<div>
+                     Princess Cays, Eleuthera
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3078ebc5bf970d7ea4d91e745b62858d = L.marker(
+                [25.728, -79.2954],
+                {
+}
+            ).addTo(map_38fee759391fcabfe5ea3e9fc25c0dfd);
+        
+    
+            var icon_4eddf628ba3d8c641c016e696e599ebc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3078ebc5bf970d7ea4d91e745b62858d.setIcon(icon_4eddf628ba3d8c641c016e696e599ebc);
+        
+    
+        var popup_3f5c2b9e1d90340d82521d0d853693d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f8c370725ba8ee3b5cbc211126bda2c = $(`<div id="html_5f8c370725ba8ee3b5cbc211126bda2c" style="width: 100.0%; height: 100.0%;">The Beach Club, Bimini</div>`)[0];
+                popup_3f5c2b9e1d90340d82521d0d853693d7.setContent(html_5f8c370725ba8ee3b5cbc211126bda2c);
+            
+        
+
+        marker_3078ebc5bf970d7ea4d91e745b62858d.bindPopup(popup_3f5c2b9e1d90340d82521d0d853693d7)
+        ;
+
+        
+    
+    
+            marker_3078ebc5bf970d7ea4d91e745b62858d.bindTooltip(
+                `<div>
+                     The Beach Club, Bimini
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
